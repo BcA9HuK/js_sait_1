@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Главная</title>
+</head>
+<body>
+    <header id="header">
+        <img onclick="clickLogo(this)" id="logo" src="image/logo.png" alt="логотип">
+        <ul id="navbar">
+            <li> <a href="vtoraya.html" target="_blank">Вторая</a></li>
+            <li> <a href="tretiya.html" target="_blank">Третья</a></li>
+            <li> <a href="start-form.html">Регистрация</a></li>
+        </ul>
+    </header>
+    <fieldset>
+        <legend><h1 ondblclick="alert('Че умный самый?')">Кликай давай!</h1></legend>
+        <button onclick="onClickButton(this)">Кликать сюда!</button>
+    </fieldset>
+
+    <h1>Текущая дата: <span id="date"></span></h1>
+    <h1> Текущее время: <span id = "time"></span></h1>
+    <script src="JS/main.js"></script>
+</body>
+</html>

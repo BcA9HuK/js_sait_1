@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Регистрация</title>
+</head>
+<body>
+    <h1>Регистрация:</h1>
+    <form id="main_form" method="post">
+        <label>Ваше имя:  <input type="text" name="name" id="name"></label><br/>
+        <label>Ваш e-mail <input type="email" name="e_mail" id="e_mail"></label><br/>
+        <p>Ваш возвраст:</p>
+        <label><input type="radio" name="age" value="men18" id="men18"> менее 18 лет</label>
+        <label><input type="radio" name="age" value="19-30" id="19-30"> 19-30 лет</label>
+        <label><input type="radio" name="age" value="31-45" id="31-45"> 31-45 лет</label>
+        <label><input type="radio" name="age" value="bol45" id="bol45"> более 45 лет</label>
+        <p>Место проживания:
+        <select name="sity">
+            <option value="Abakan">Абакан</option>
+            <option value="Abaza">Абаза</option>
+            <option value="Chernogorsk">Черногорск</option>
+            <option value="Moscow">Москва</option>
+        </select>
+        <fieldset>
+            <legend> Информация для разработчиков</legend>
+            Дизайн сайта Вам:<br/>
+            <label><input type="radio" name="kak_sait" value="ponrav" id="ponrav">Понравился</label><br/>
+            <label><input type="radio" name="kak_sait" value="ne_ponrav" id="ne_ponrav">Не понравился</label>
+        </fieldset>
+        <p>Ваши замечания и предложения:</p>
+        <textarea name="comments" rows="5" cols="60"> </textarea><br/>
+        <div id='error' style="color: red;"></div>
+        <input type="submit" value="Отправить">
+        <input type="reset" value="Отмена">
+    </form>
+    <script src="JS/reg.js"></script>
+</body>
+</html>
