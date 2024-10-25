@@ -181,3 +181,6 @@ legend{
 .date {
     background-color: #ffffff;
 }
+#time, #date {
+    color: gold;
+}
