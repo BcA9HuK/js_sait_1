@@ -51,6 +51,10 @@ background-color: #ddd;
 .btn { 
     font-size: 20px;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 .btn:focus{
     background: red; 
@@ -86,6 +90,10 @@ legend{
     margin: 20px auto;
     font-size: 16px;
     transition: transform 0.1s ease-in-out;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 .round-btn:hover {
@@ -114,7 +122,11 @@ legend{
     cursor: pointer;
     max-width: 150px;
     height: auto;
-    transition: transform 0.3s ease; /* Добавляем плавный переход */
+    transition: transform 0.3s ease;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 .image-button img.enlarged {
