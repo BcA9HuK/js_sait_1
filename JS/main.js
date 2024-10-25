@@ -55,3 +55,8 @@ function onClickImage(el, event) {
         document.body.removeChild(flyingText);
     }, 1000);
 }
+
+function toggleMenu() {
+    var nav = document.querySelector('nav');
+    nav.classList.toggle('active');
+}
